@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Mental Health</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 100%;
+            max-width: 400px; /* Ancho aproximado */
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        header {
+            background-color: #e0f2f7;
+            padding: 20px;
+            position: relative;
+        }
+        header .menu-icon {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: #000;
+            cursor: pointer;
+        }
+        .header-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start; /* Alinea los items al inicio */
+            padding-top: 40px; /* Espacio para el menú si estuviera arriba del todo */
+        }
+        .header-content {
+            text-align: left;
+        }
+        .header-content h1 {
+            font-size: 2.2em; /* Ajustado para que quepa mejor */
+            color: #000;
+            margin: 0 0 10px 0;
+            font-weight: bold;
+            line-height: 1.1;
+        }
+        .header-content img.logo-smh { /* Estilo para el logo circular */
+            width: 70px; /* Tamaño aproximado del logo */
+            height: auto;
+            display: block;
+        }
+        .header-image-container img {
+            max-width: 150px; /* Ajustado */
+            height: auto;
+            /* border-radius: 10px; */ /* La imagen original no parece tener bordes redondeados */
+        }
+        .info-bar {
+            background-color: #3b8c9d;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .main-content p {
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .main-content p strong {
+            color: #000;
+        }
+        .section-block {
+            margin-bottom: 20px;
+            text-align: center;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section-block img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .section-block .caption {
+            padding: 12px; /* Un poco más de padding */
+            font-weight: bold;
+            background-color: #f9f9f9;
+            color: #333;
+            font-size: 1em;
+        }
+        .quienes-somos-block {
+             background-color: #d1c4e9; /* Fondo lila */
+        }
+        .quienes-somos-block .caption{
+            background-color: #d1c4e9; /* Mismo fondo lila para el caption */
+            padding-top: 15px; /* Espacio arriba del texto */
+        }
+        footer {
+            background-color: #2c7a89;
+            padding: 20px;
+            color: #ffffff;
+        }
+        .contact-button {
+            display: block;
+            width: fit-content;
+            margin: 0 auto 20px auto;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #3b8c9d;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        .contact-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+        .contact-info img.icon { /* Clase para los iconos */
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        /* URLs de las imágenes - Reemplaza con URLs reales y accesibles públicamente */
+        .img-placeholder-logo { /* Placeholder para el logo circular "1 de cada 4..." */
+            content: url('https://via.placeholder.com/70/CCCCCC/000000?Text=Logo'); /* Ejemplo */
+        }
+        .img-placeholder-woman { /* Placeholder para la imagen de la mujer */
+            content: url('https://via.placeholder.com/150x200/E0F2F7/000000?Text=Meditating'); /* Ejemplo */
+        }
+        .img-placeholder-test {
+            content: url('https://via.placeholder.com/360x150/EEEEEE/000000?Text=Mental+Health+Test');
+        }
+        .img-placeholder-disorders {
+            content: url('https://via.placeholder.com/360x200/CCCCCC/FFFFFF?Text=Trastornos');
+        }
+        .img-placeholder-who {
+            content: url('https://via.placeholder.com/360x200/D1C4E9/000000?Text=Quienes+Somos');
+        }
+        .icon-whatsapp {
+            content: url('https://via.placeholder.com/24/25D366/FFFFFF?Text=W'); /* Ejemplo */
+        }
+        .icon-mail {
+            content: url('https://via.placeholder.com/24/DB4437/FFFFFF?Text=M'); /* Ejemplo */
+        }
+        .icon-phone {
+            content: url('https://via.placeholder.com/24/34B7F1/FFFFFF?Text=P'); /* Ejemplo */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="menu-icon">&#9776;</span>
+            <div class="header-layout">
+                <div class="header-content">
+                    <h1>SAFE <br>MENTAL <br>HEALTH</h1>
+                    <img src="URL_DEL_LOGO_CIRCULAR_AQUI" alt="Logo SMH 1 de cada 4 personas" class="logo-smh img-placeholder-logo">
+                </div>
+                <div class="header-image-container">
+                    <img src="URL_DE_LA_IMAGEN_MUJER_AQUI" alt="Woman meditating" class="img-placeholder-woman">
+                </div>
+            </div>
+        </header>
+
+        <div class="info-bar">
+            Todo lo que debes saber para tener una vida plena y con menos preocupaciones
+        </div>
+
+        <div class="main-content">
+            <p><strong>Tu bienestar mental es fundamental.</strong> No estás solo/a en tu camino hacia una mejor salud emocional. Si sientes que necesitas ayuda, es importante buscar apoyo profesional. Aprender a comunicar sobre tus <strong>emociones y cuidar de tu mente</strong> es tan esencial como cuidar de tu cuerpo.</p>
+            <p>Si en algún momento sientes que la situación es urgente, por favor contacta a los servicios de <strong>emergencia o a una línea de ayuda especializada.</strong></p>
+
+            <div class="section-block">
+                <img src="URL_IMAGEN_PRUEBA_SALUD_AQUI" alt="Personas conversando en un escritorio" class="img-placeholder-test">
+                <div class="caption">Prueba de salud mental</div>
+            </div>
+
+            <div class="section-block">
+                <img src="URL_IMAGEN_TRANSTORNOS_AQUI" alt="Persona con la cabeza entre las manos en blanco y negro" class="img-placeholder-disorders">
+                <div class="caption">Transtornos</div>
+            </div>
+
+            <div class="section-block quienes-somos-block">
+                <img src="URL_IMAGEN_QUIENES_SOMOS_AQUI" alt="Doctora sonriendo con un modelo de corazón" class="img-placeholder-who">
+                <div class="caption">¿Quienes somos?</div>
+            </div>
+        </div>
+
+        <footer>
+            <a href="#" class="contact-button">Contacto de atención</a>
+            <div class="contact-info">
+                <img src="URL_ICONO_WHATSAPP_AQUI" alt="WhatsApp Icon" class="icon icon-whatsapp">
+                <span>&nbsp;</span> </div>
+            <div class="contact-info">
+                <img src="URL_ICONO_EMAIL_AQUI" alt="Email Icon" class="icon icon-mail">
+                <a href="mailto:camiloaragonroman@gmail.com">camiloaragonroman@gmail.com</a>
+            </div>
+            <div class="contact-info">
+                <img src="URL_ICONO_TELEFONO_AQUI" alt="Phone Icon" class="icon icon-phone">
+                <a href="tel:+573208455447">+57 320 8455447</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
